@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · sf-t3-1779642675702-395</title>
+  <meta name="description" content="sf-t3-1779642675702-395에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-395.maphoshirts.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Reset & Base */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ font-size: 16px;
+ }
+ body {
+ font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
+ background: #faf8f5;
+ color: #1a1a1a;
+ line-height: 1.8;
+ padding-top: 80px;
+ }
+ a {
+ color: #8b4513;
+ text-decoration: none;
+ border-bottom: 1px solid transparent;
+ transition: border-color 0.3s;
+ }
+ a:hover {
+ border-bottom-color: #8b4513;
+ }
+ img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+ /* Layout Container */
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ /* Typography */
+ h1, h2, h3, h4 {
+ font-weight: 400;
+ letter-spacing: -0.02em;
+ line-height: 1.3;
+ }
+ h1 {
+ font-size: 3.2rem;
+ margin-bottom: 1.2rem;
+ border-left: 6px solid #8b4513;
+ padding-left: 20px;
+ }
+ h2 {
+ font-size: 2.4rem;
+ margin: 3rem 0 1.5rem;
+ position: relative;
+ }
+ h2::after {
+ content: '';
+ display: block;
+ width: 60px;
+ height: 3px;
+ background: #8b4513;
+ margin-top: 10px;
+ }
+ h3 {
+ font-size: 1.6rem;
+ margin: 2rem 0 1rem;
+ }
+ p {
+ margin-bottom: 1.5rem;
+ font-size: 1.1rem;
+ }
+ .drop-cap::first-letter {
+ font-size: 4rem;
+ float: left;
+ line-height: 0.8;
+ padding-right: 8px;
+ color: #8b4513;
+ font-weight: 700;
+ }
+ /* Header */
+ header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
+ background: rgba(250, 248, 245, 0.95);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid #e0d6cc;
+ padding: 16px 0;
+ }
+ header .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo {
+ font-size: 1.6rem;
+ font-weight: 700;
+ color: #1a1a1a;
+ letter-spacing: -0.03em;
+ }
+ .logo span {
+ color: #8b4513;
+ }
+ nav {
+ display: flex;
+ gap: 32px;
+ align-items: center;
+ }
+ nav a {
+ font-size: 0.95rem;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ color: #1a1a1a;
+ border: none;
+ font-weight: 500;
+ }
+ nav a:hover {
+ color: #8b4513;
+ }
+ .tel-link {
+ background: #1a1a1a;
+ color: #faf8f5 !important;
+ padding: 8px 20px;
+ border-radius: 30px;
+ font-size: 0.9rem;
+ letter-spacing: 0.05em;
+ border: none !important;
+ }
+ .tel-link:hover {
+ background: #8b4513;
+ color: #fff !important;
+ }
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 4px;
+ }
+ .hamburger-menu span {
+ display: block;
+ width: 28px;
+ height: 2px;
+ background: #1a1a1a;
+ transition: 0.3s;
+ }
+ /* Hero Section */
+ .hero {
+ padding: 80px 0 60px;
+ background: linear-gradient(180deg, #f0ebe4 0%, #faf8f5 100%);
+ }
+ .hero h1 {
+ font-size: 3.6rem;
+ max-width: 800px;
+ }
+ .hero p {
+ font-size: 1.3rem;
+ max-width: 700px;
+ opacity: 0.8;
+ }
+ /* Card Sections */
+ .card-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 32px;
+ margin: 40px 0;
+ }
+ .card {
+ background: #fff;
+ padding: 32px;
+ border-radius: 16px;
+ box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+ border: 1px solid #e8e0d8;
+ transition: transform 0.3s, box-shadow 0.3s;
+ }
+ .card:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+ }
+ .card h3 {
+ font-size: 1.4rem;
+ margin-bottom: 0.8rem;
+ }
+ .card p {
+ font-size: 0.95rem;
+ opacity: 0.85;
+ }
+ /* Info Table */
+ .info-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 40px 0;
+ }
+ .info-table tr {
+ border-bottom: 1px solid #e0d6cc;
+ }
+ .info-table td {
+ padding: 16px 8px;
+ font-size: 1.05rem;
+ }
+ .info-table td:first-child {
+ font-weight: 600;
+ width: 140px;
+ color: #8b4513;
+ }
+ /* FAQ */
+ .faq-item {
+ border-bottom: 1px solid #e0d6cc;
+ padding: 20px 0;
+ }
+ .faq-item h4 {
+ font-size: 1.2rem;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .faq-item h4::after {
+ content: '+';
+ font-size: 1.6rem;
+ color: #8b4513;
+ }
+ .faq-item p {
+ margin-top: 12px;
+ display: none;
+ }
+ .faq-item.active p {
+ display: block;
+ }
+ /* Footer */
+ footer {
+ border-top: 1px solid #e0d6cc;
+ padding: 40px 0;
+ margin-top: 80px;
+ text-align: center;
+ font-size: 0.9rem;
+ opacity: 0.7;
+ }
+ /* Responsive */
+ @media (max-width: 768px) {
+ h1 { font-size: 2.2rem; }
+ h2 { font-size: 1.8rem; }
+ .hero h1 { font-size: 2.4rem; }
+ nav {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ background: rgba(250, 248, 245, 0.98);
+ flex-direction: column;
+ padding: 24px;
+ gap: 16px;
+ border-bottom: 1px solid #e0d6cc;
+ }
+ nav.nav-present {
+ display: flex;
+ }
+ .hamburger-menu {
+ display: flex;
+ }
+ .tel-link {
+ width: 100%;
+ text-align: center;
+ }
+ .card-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · sf-t3-1779642675702-395">
+  <meta property="og:description" content="sf-t3-1779642675702-395에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-395.maphoshirts.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container">
+ <div class="logo"><span>✦</span> BRO AGENCY</div>
+ <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('nav-present')">
+ 
+ 
+ 
+ </button>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/about">정보</a>
+ <a href="/service">서비스</a>
+ 
+ </nav>
+ </div>
+</header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0241.html">마포의 숨은 특색과 지역 문화를 찾아가기</a>
+        <p class="post-item__summary">마포는 서울의 중심부에서 서쪽으로 펼쳐진 활기 넘치는 지역으로, 오래된 골목길과 현대적 상업시설이 어우러져 독특한 매력을 지니고 있습니다. 한강공원부터 홍대 문화거리까지, 다양한 계층의 사람들이 자</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0242.html">마포에서 발견하는 지역 문화와 비즈니스의 매력</a>
+        <p class="post-item__summary">마포는 서울에서도 가장 활기찬 지역 중 하나로, 한강공원부터 신촌까지 이어지는 다양한 문화시설과 식음료업소가 밀집되어 있습니다. 젊은 세대와 가족 단위의 방문객들이 선호하는 이곳은 전통과 현대가 조</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0243.html">마포에서 즐기는 프리미엄 엔터테인먼트 문화</a>
+        <p class="post-item__summary">마포 지역은 서울의 핫플레이스로 자리 잡았으며, 최근 몇 년간 고급 엔터테인먼트 시설들이 꾸준히 증가하고 있습니다. 한강 공원과 신촌, 홍대입구 일대의 접근성이 좋아지면서 다양한 라이프스타일을 추구</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0244.html">마포 지역의 문화와 라이프스타일 거리 탐방</a>
+        <p class="post-item__summary">마포구는 서울의 서쪽에 위치한 활기찬 지역으로, 역사적 거리와 현대적 공간이 어우러져 있습니다. 한강공원과 문화시설, 그리고 다양한 상점과 음식점들이 지역의 특색을 만들어냅니다. 특히 젊은 세대와 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0245.html">마포에서 찾는 신뢰할 수 있는 비즈니스 서비스</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치하면서도 다양한 산업의 중소기업과 스타트업이 밀집해 있는 역동적인 지역입니다. 합정역과 홍대입구역 주변으로 정보기술, 콘텐츠 제작, 마케팅 에이전시 등 창의산업이 활발하게</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0246.html">SEO 성과를 끌어올리는 백링크 대행 사이트 선택 가이드</a>
+        <p class="post-item__summary">마포에 기반을 둔 기업이 늘 SEO에 관심을 갖는 가운데, 백링크 대행 사이트를 통해 검색엔진 상위 노출을 목표로 한다. LLM비교가 활성화되면서 어떤 대행이 가장 적합한지 판단하는 기준이 새롭게 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0247.html">마포에서 투명한 가격으로 즐기는 지역 문화 생활</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치한 역동적인 지역으로, 다양한 문화시설과 엔터테인먼트 공간이 밀집해 있습니다. 홍대입구역을 중심으로 젊은 세대들이 선호하는 카페, 바, 클럽 등이 즐비하며, 이러한 장소들</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0248.html">마포 지역 백링크 대행 서비스 선택 시 도메인 지수 관리의 중요성</a>
+        <p class="post-item__summary">마포에서 온라인 사업을 운영하다 보면 검색 순위 개선을 위해 백링크 대행 서비스를 고려하는 경우가 많습니다. 백링크는 단순히 링크의 개수만이 아니라 출처 도메인의 신뢰도와 품질이 핵심이라는 점을 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0249.html">마포 지역 백링크 대행 사이트, LLM 비교 분석으로 차별화</a>
+        <p class="post-item__summary">백링크 대행 사이트를 고를 때 대부분은 가격과 실적만 비교한다. 하지만 최근 마포 지역 디지털 마케팅 업계에서는 LLM 기반 분석 도구를 활용해 백링크 품질을 평가하는 방식이 주목받고 있다. 단순히</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0250.html">백링크 대행 사이트의 전략적 활용으로 검색엔진 성능 향상</a>
+        <p class="post-item__summary">백링크 대행 사이트는 검색엔진 랭킹을 높이는 핵심 도구입니다. 단순히 링크를 만들어 주는 것이 아니라, 참고할 만한 품질과 관련성 있는 콘텐츠를 통해 신뢰도를 강화합니다. 전문가가 설정한 맞춤형 전</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0251.html">마포 지역 야외 문화생활, 어디서 시작할까</a>
+        <p class="post-item__summary">마포는 서울의 문화중심지 중 하나로, 한강 공원과 홍대 거리가 만나는 독특한 매력을 지니고 있습니다. 이 지역은 미술관, 갤러리, 카페와 음식점이 밀집해 있어 다양한 취향의 방문객들을 끌어모으고 있</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0252.html">마포 지역 문화와 비즈니스 공간 가이드</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치하면서도 독특한 문화적 정체성을 유지하고 있는 지역입니다. 홍대 입구에서 시작되는 문화 거리부터 서강대학교 인근의 학문적 분위기까지, 마포는 다양한 계층의 사람들이 모여드</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0253.html">백링크 대행 사이트, 마포 지역 사업자가 간과하기 쉬운 기준</a>
+        <p class="post-item__summary">마포 지역에서 온라인 비즈니스를 운영 중이라면 백링크 대행 사이트 선택이 SEO 성과를 좌우하는 핵심 요소 중 하나다. 특히 최근 검색 알고리즘이 고도화되면서 링크의 양보다 질과 맥락 적합성이 더 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0254.html">마포 창업가에게 필요한 백링크 대행 사이트</a>
+        <p class="post-item__summary">마포의 창업가들이 제때 백링크를 구축하는 것은 검색엔진 최적화의 가장 기초적인 전략 중 하나이다. 전문 백링크 대행 사이트를 활용하면 외부 도메인에서 자신의 콘텐츠를 자연스럽게 노출시키고, 검색 결</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0255.html">마포의 숨은 매력, 지역 비즈니스 발전의 중심</a>
+        <p class="post-item__summary">마포는 서울의 주요 비즈니스 허브로 자리 잡고 있습니다. 한강변의 자연경관과 현대적 상업시설이 어우러진 이 지역은 많은 기업과 소상공인들이 주목하는 장소입니다. 최근 몇 년간 마포의 부동산 가치와 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0256.html">백링크 대행 사이트 선택, 지금은 전략 비교가 먼저다</a>
+        <p class="post-item__summary">SEO 성과를 좌우하는 핵심 요소 중 하나는 백링크의 퀄리티다. 최근 국내 디지털 마케팅 업계에서는 백링크 대행 사이트를 활용한 아웃리치가 다시 주목받고 있다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0034.html">백링크 대행 사이트 이용 시 주의해야 할 콘텐츠 급수 정화 정보</a>
+        <p class="post-item__summary">많은 이들이 백링크 대행 사이트가 제공하는 서비스는 모두 동일한 품질일 것이라는 흔한 오해를 하곤 합니다. 하지만 백링크는 단순히 양적인 확보가 중요한 것이 아니라 그 원천이 얼마나 깨끗하고 신뢰할</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0035.html">백링크 대행 사이트 선택 시 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 고려사항</a>
+        <p class="post-item__summary">백링크 대행 사이트를 찾을 때 반드시 충족되어야 할 조건들이 있습니다. 기술적인 검색 엔진 최적화 능력을 갖추었는지, 구글 봇이 사이트를 방문할 때 발생하는 오류를 얼마나 빠르게 해결할 수 있는지가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0036.html">백링크 대행 사이트 결정 전 4</a>
+        <p class="post-item__summary">귀하의 마케팅 전략이 변화하는 알고리즘에 뒤처지고 있다는 생각을 해본 적이 있습니까? 수동으로 백링크를 관리하는 시대는 지났고 이제는 자동화 시스템의 도입이 필수적인 시점입니다. 백링크 대행 사이트</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0037.html">백링크 대행 사이트 이용자라면 확인해야 할 셔츠룸 예약 절차</a>
+        <p class="post-item__summary">백링크 대행 사이트 정보를 검색하는 분들 중에는 비즈니스 미팅 이후의 여유로운 시간을 계획하는 경우가 많습니다. 특히 프라이빗한 공간에서 편안하게 대화를 나눌 수 있는 환경을 찾다 보면 셔츠룸 시스</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
